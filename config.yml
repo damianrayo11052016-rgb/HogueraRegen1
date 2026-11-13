@@ -1,0 +1,34 @@
+# Configuración de HogueraRegen
+
+# Radio (en bloques) alrededor del jugador donde se busca una hoguera. Máximo recomendado: 10
+radius: 5
+
+# Cada cuántos ticks se revisa a los jugadores (20 ticks = 1 segundo)
+check-interval-ticks: 40
+
+# Duración del efecto de Regeneración en ticks (debe ser mayor que check-interval-ticks para que no se corte)
+effect-duration-ticks: 100
+
+# Nivel del efecto: 0 = Regeneración I, 1 = Regeneración II, etc.
+amplifier: 0
+
+# Hogueras normales (CAMPFIRE)
+normal-campfire:
+  enabled: true
+  amplifier: 0
+
+# Hogueras de almas (SOUL_CAMPFIRE) - por defecto dan más regeneración
+soul-campfire:
+  enabled: true
+  amplifier: 1
+
+# Si es true, la hoguera debe estar encendida (no apagada ni con agua)
+require-lit: true
+
+# Mostrar partículas del efecto
+show-particles: true
+
+# Mensajes
+messages:
+  reloaded: "&aConfiguración de HogueraRegen recargada."
+  no-permission: "&cNo tienes permiso para hacer eso."
